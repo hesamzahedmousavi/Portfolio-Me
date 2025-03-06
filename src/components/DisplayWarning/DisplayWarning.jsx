@@ -1,33 +1,20 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 const ResolutionBlock = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1280);
+    const checkResolution = () => {
+      if (window.innerWidth < 1280) {
+        alert(
+          "این سایت هنوز برای گوشی‌های موبایل بهینه‌سازی نشده است! لطفاً از دستگاه دسکتاپ استفاده کنید."
+        );
+      }
     };
 
-    window.addEventListener("resize", handleResize);
-    handleResize();
+    checkResolution();
+    window.addEventListener("resize", checkResolution);
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", checkResolution);
   }, []);
-
-  if (isMobile) {
-    return (
-      <div className="fixed top-0 left-0 w-screen h-screen flex flex-col items-center justify-center bg-black text-white text-center p-6 z-50">
-        <div className="w-[90%] max-w-[400px] bg-gray-900 rounded-lg p-5 shadow-lg">
-          <p className="text-xl font-bold">
-            این سایت هنوز برای گوشی‌های موبایل بهینه‌سازی نشده است!
-          </p>
-          <p className="mt-3 text-sm leading-6">
-            لطفاً از یک دستگاه دسکتاپ یا تبلت استفاده کنید.
-          </p>
-        </div>
-      </div>
-    );
-  }
 
   return null;
 };
