@@ -5,10 +5,7 @@ const ResolutionBlock = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const isDesktopMode =
-        window.innerWidth >= 1280 &&
-        window.navigator.userAgent.includes("Macintosh");
-      setIsBlocked(!isDesktopMode);
+      setIsBlocked(window.innerWidth < 1280);
     };
 
     window.addEventListener("resize", handleResize);
