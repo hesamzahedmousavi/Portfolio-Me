@@ -7,4 +7,8 @@ export default defineConfig({
     hmr: true,
   },
   plugins: [react(), tailwindcss()],
+  build: {
+    minify: "esbuild",
+    treeshake: true,
+  },
 });
