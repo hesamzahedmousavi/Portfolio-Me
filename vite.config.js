@@ -10,5 +10,6 @@ export default defineConfig({
   build: {
     minify: "esbuild",
     treeshake: true,
+    sourcemap: false,
   },
 });
