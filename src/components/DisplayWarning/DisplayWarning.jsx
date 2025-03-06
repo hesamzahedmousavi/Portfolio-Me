@@ -16,8 +16,8 @@ const ResolutionBlock = () => {
 
   if (isMobile) {
     return (
-      <div className="fixed inset-0 flex h-screen items-center justify-center bg-black text-white text-center p-5 z-50">
-        <div>
+      <div className="fixed inset-0 flex items-center justify-center bg-black text-white text-center p-5 z-50">
+        <div className="max-w-xs p-4 bg-black rounded-lg">
           <p className="text-xl font-bold">
             این سایت هنوز برای گوشی‌های موبایل بهینه‌سازی نشده است!
           </p>
