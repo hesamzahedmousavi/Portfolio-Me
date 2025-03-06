@@ -5,7 +5,7 @@ const ResolutionBlock = () => {
     const checkResolution = () => {
       if (window.innerWidth < 1280) {
         alert(
-          "این سایت هنوز برای گوشی‌های موبایل بهینه‌سازی نشده است! لطفاً از دستگاه دسکتاپ استفاده کنید."
+          "این سایت هنوز برای گوشی‌های موبایل بهینه سازی نشده است! لطفاً از کامپیوتر یا تبلت استفاده کنید."
         );
         document.body.style.display = "none";
       }
