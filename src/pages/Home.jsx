@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import World from "../components/Planet/Planet";
-import Footer from "../components/Footer/Footer";
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
+const World = lazy(() => import("../components/Planet/Planet"));
+const Footer = lazy(() => import("../components/Footer/Footer"));
+
 function Home() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
