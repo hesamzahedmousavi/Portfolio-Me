@@ -5,11 +5,11 @@ const ResolutionBlock = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1280); 
+      setIsMobile(window.innerWidth < 1280);
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); 
+    handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -28,8 +28,6 @@ const ResolutionBlock = () => {
       </div>
     );
   }
-
-  return <div></div>;
 };
 
 export default ResolutionBlock;
