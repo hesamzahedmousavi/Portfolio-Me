@@ -11,7 +11,7 @@ const contentView = [
     description:
       "Built an interactive web app usingHTML, CSS, JavaScript, React, and Redux, seamlessly integratingthe Rick and Morty API for a smooth user experienceWorked closely with designers and developers,optimizing state management and API performancewhile ensuring a responsive and engaging UI. 🚀",
     tags: ["HTML", "CSS", "Tailwindcss", "JavaScript", "React"],
-    picture: "/public/images/ProjectPicture.png",
+    picture: "/images/ProjectPicture.png",
     viewLink: "",
     githubLink:
       "https://github.com/hesamzahedmousavi/Rick-and-Morty-API-with-React.js",
@@ -22,7 +22,7 @@ const contentView = [
     description:
       "Developed a dynamic and user-friendly hotel booking web app using HTML, CSS, JavaScript, and React, ensuring a seamless reservation experience.Implemented a responsive and intuitive UI, ensuring a smooth experience across all devices.Connected the frontend to a RESTful API, handling authentication, payments, and user data securely.Optimized API requests and performance for faster loading times and a frictionless booking process. 🚀",
     tags: ["HTML", "CSS", "JavaScript", "React"],
-    picture: "/public/images/picHotelApp.png",
+    picture: "/images/picHotelApp.png",
     viewLink: "",
     githubLink: "https://github.com/hesamzahedmousavi/Booking-Hotel-App",
   },

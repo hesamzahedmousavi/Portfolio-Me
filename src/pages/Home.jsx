@@ -56,13 +56,13 @@ function Home() {
               <img
                 loading="lazy"
                 alt="hesam zahed photo"
-                src="/public/images/crop me - Copy.webp"
+                src="/images/crop me - Copy.webp"
                 className="hidden 2xl:block absolute 2xl:-top-59 xl:-top-45 2xl:-right-15 xl:-right-18 2xl:scale-75 xl:scale-85"
               />
               <img
                 loading="lazy"
                 alt="hesam zahed photo"
-                src="/public/images/xl-size-photo.webp"
+                src="/images/xl-size-photo.webp"
                 className="hidden 2xl:hidden xl:block absolute 2xl:-top-59 xl:-top-63 2xl:-right-15 xl:-right-22 2xl:scale-75 xl:scale-80 xl-photo-me"
               />
               {/* typography */}
@@ -118,7 +118,7 @@ function Home() {
                   loading="lazy"
                   alt="article photo"
                   className="w-[475px] h-[350px] object-cover rounded-2xl"
-                  src="/public/images/DALL·E .webp"
+                  src="/images/DALL·E .webp"
                 />
               </div>
               {/* box */}
