@@ -1,0 +1,46 @@
+@import url("./font/fonts.css");
+@import "tailwindcss";
+@theme {
+  --font-Lexend: "Lexend";
+  --font-Vazir: "Vair";
+  --font-Arial: "Arial";
+}
+
+@layer components {
+  .active {
+    @apply border-b-2 border-[#00BFAE] text-[#00BFAE];
+  }
+  .btn-resume {
+    @apply text-white font-Lexend font-semibold text-xl;
+  }
+  .layout--btn-resume {
+    @apply flex bg-[#27272C] hover:bg-[#00BFAE] transition duration-300 py-4.5 px-25 rounded-3xl items-center justify-center;
+  }
+  .btn-resume--active {
+    @apply bg-[#00BFAE];
+  }
+  .boxs {
+    @apply text-[#909090] text-base p-3 bg-[#1C1C22] rounded-3xl focus:outline-[#00BFAE] focus:outline-2 focus:transition;
+  }
+}
+
+.xl-photo-me {
+  clip-path: inset(0 0 27.6% 0);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3b3c3d;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00bfae;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #009e91;
+}
