@@ -107,7 +107,7 @@ function Home() {
           <div className="ml-20 relative">
             {/* text */}
             <Suspense fallback={<p>loading ...</p>}>
-              <div className="flex justify-start absolute -top-3.5 items-start text-white font-black font-Arial text-9xl">
+              <div className="flex justify-start absolute -top-3.5 items-start text-white font-Arial text-9xl">
                 <span>Portfolio</span>
               </div>
             </Suspense>
