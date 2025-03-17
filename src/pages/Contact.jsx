@@ -1,13 +1,16 @@
 import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 
-const { resetForm, setEmail, setError, setMessage } = lazy(() =>
-  import("../redux/form/formSlice")
-);
-
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
+
+import {
+  resetForm,
+  setEmail,
+  setError,
+  setMessage,
+} from "../redux/form/formSlice";
 
 const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
